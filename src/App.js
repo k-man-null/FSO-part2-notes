@@ -42,6 +42,11 @@ const App = (props) => {
   const notesToShow = showAll
     ?notes
     :notes.filter(note => note.important === true)
+
+  const toggleImportanceOf = (id) => {
+    console.log('importance of' + id + 'needs to be toggled')
+  }
+  
   return (
     <div>
       <h1>Notes</h1>
